@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - Contains code that is run
- * Description - Prints size of types
- * Return - returns zero
+ * Description: Prints size of types
+ * Return: returns zero
  */
 int main(void)
 {

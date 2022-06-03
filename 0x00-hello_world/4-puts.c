@@ -1,9 +1,7 @@
 #include <stdio.h>
-/**
- * Using puts command to output text
- */
-int main(void)
+int main(void)/*Embodies the code*/
 {
 	puts("\"Programming is like building a multilingual puzzle");
+	/*Returns zero*/
 	return (0);
 }

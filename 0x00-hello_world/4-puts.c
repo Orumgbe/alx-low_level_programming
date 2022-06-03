@@ -1,6 +1,8 @@
 #include <stdio.h>
-int main(void)/*Embodies the code*/
-/*Embodies the code*/
+/**
+ *main function - Embodies code
+ */
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	/*Returns zero*/

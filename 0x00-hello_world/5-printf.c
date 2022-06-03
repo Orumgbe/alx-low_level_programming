@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main - Holds all code
+ * main - Holds all code
  * Description: Outputs text
  * Return: returns zero
  */

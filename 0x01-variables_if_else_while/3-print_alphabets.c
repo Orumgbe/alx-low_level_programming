@@ -12,7 +12,7 @@ int main(void)
 	l = 97;
 	u = 65;
 	/**
-	 *  Ascii a-z == 97 to 123
+	 *  Ascii a-z == 97 to 122
 	 *  Ascii A-Z == 65 to 90
 	 */
 	while (l < 123)
@@ -20,7 +20,7 @@ int main(void)
 		putchar(l);
 		l++;
 	}
-	while (u < 90)
+	while (u < 91)
 	{
 		putchar(u);
 		u++;

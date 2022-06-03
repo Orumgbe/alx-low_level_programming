@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- *main function - Embodies code
+ *main - Embodies code
+ *Description: Outputs text
+ *Return: Returns zero
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	/*Returns zero*/
 	return (0);
 }

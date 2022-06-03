@@ -15,11 +15,14 @@ int main(void)
 	 *  Ascii a-z == 97 to 123
 	 *  Ascii A-Z == 65 to 90
 	 */
-	while (l < 123 && u < 90)
+	while (l < 123)
 	{
 		putchar(l);
-		putchar(u);
 		l++;
+	}
+	while (u < 90)
+	{
+		putchar(u);
 		u++;
 	}
 	putchar('\n');

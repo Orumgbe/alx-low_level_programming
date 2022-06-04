@@ -3,22 +3,19 @@
 /**
  * main - Holds Code
  * Description: Ascii 48 to 57 is decimal 0 to 9
- * 		Working with a nested for loop
+ * 	Working with a nested for loop
  * Return: retuns 0
  */
 int main(void)
 {
-	short x, y;
+	short x;
 
 	for (x = 48; x < 58; x++)
 	{
-		for (y = 48; y < 58; y++)
-		{
 			putchar(x);
 			putchar(',');
-			putchar(y);
 			putchar(' ');
-		}
+			putchar('\n');
 	}
-	return 0;
+	return (0);
 }

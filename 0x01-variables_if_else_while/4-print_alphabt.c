@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	int l, u;
+	int l;
 
 	l = 97;
 	/* Ascii a-z == 97 to 122 */
 	while (l < 123)
 	{
-		if (!(l = 101 || l = 113))
+		if (l != 101 || l != 113)
 		{
 			putchar(l);
 			l++;

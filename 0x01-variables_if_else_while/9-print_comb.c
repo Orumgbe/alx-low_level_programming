@@ -12,14 +12,14 @@ int main(void)
 
 	for (x = 48; x < 58; x++)
 	{
+		putchar(x);
 		if (x != 57)
 		{
-			putchar(x);
 			putchar(',');
 		}
 		else
 		{
-			putchar(x);
+			putchar('\n');
 		}
 		putchar(' ');
 	}

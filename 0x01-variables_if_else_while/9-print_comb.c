@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int x;
+	short x;
 
 	for (x = 48; x < 58; x++)
 	{
@@ -16,12 +16,12 @@ int main(void)
 		if (x != 57)
 		{
 			putchar(',');
+			putchar(' ');
 		}
 		else
 		{
 			putchar('\n');
 		}
-		putchar(' ');
 	}
 	return (0);
 }

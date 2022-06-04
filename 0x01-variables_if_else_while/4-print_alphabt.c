@@ -13,7 +13,7 @@ int main(void)
 	/* Ascii a-z == 97 to 122 */
 	while (l < 123)
 	{
-		if (l = 101 || l = 113)
+		if (l = 101 || 113)
 		{
 			l++;
 		}

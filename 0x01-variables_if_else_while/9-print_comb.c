@@ -8,15 +8,22 @@
  */
 int main(void)
 {
-	short x;
+	short x, y;
 
-	for (x = 48; x < 57; x++)
+	for (x = 48; x < 58; x++)
 	{
-		putchar(x);
-		putchar(',');
-		putchar(' ');
+		if (x < 57)
+		{
+			putchar(x);
+			putchar(',');
+			putchar(' ');
+		}
+		else
+		{
+			putchar(x);
+			putchar(' ');
+		}
+
 	}
-	x = 57;
-	putchar(x);
 	return (0);
 }

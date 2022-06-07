@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	char i;
 
-	i = tolower(c);
+	i = islower(c);
 	if (i == c)
 	{
 		return (1);

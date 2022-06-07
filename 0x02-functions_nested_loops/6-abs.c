@@ -2,7 +2,7 @@
 #include <math.h>
 /**
  * _abs - check the code
- * @ : integer argument
+ * @n : integer argument
  * Description: Computes absolute value
  * Return: returns absolute value
  */

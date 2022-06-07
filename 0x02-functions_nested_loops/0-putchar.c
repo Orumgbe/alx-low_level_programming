@@ -5,12 +5,14 @@
  */
 int main(void)
 {
-	char count;
-	count = 0;
-	while (count < 27)
+	int n;
+	char letters[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
+
+	n = 0;
+	while (n < 9)
 	{
-		_putchar(count + 65);
-		count ++;
+		_putchar(letters[n]);
+		n++;
 	}
 	return (0);
 }

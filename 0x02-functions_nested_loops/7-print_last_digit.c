@@ -23,7 +23,7 @@ int print_last_digit(int l)
 		_putchar(48);
 		return(0);
 	}
-	else (l < 0)
+	else
 	{
 		r = (l * -1) % 10;
 		s = r + 48;

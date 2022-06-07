@@ -25,9 +25,16 @@ int print_last_digit(int l)
 	}
 	else
 	{
-		s = (l * -1) % 10;
-		r = s + 48;
-		_putchar(r);
-		return (s);
+		if (l == INT_MIN)
+		{
+			return (88);
+		}
+		else
+		{
+			s = (l * -1) % 10;
+			r = s + 48;
+			_putchar(r);
+			return (s);
+		}
 	}
 }

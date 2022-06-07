@@ -23,7 +23,6 @@ int print_sign(int n)
 		int i = -1;
 
 		_putchar(45);
-		_putchar(49);
 		return (i);
 	}
 	return 0;

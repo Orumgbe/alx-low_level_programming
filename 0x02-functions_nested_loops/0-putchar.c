@@ -1,18 +1,16 @@
-#include <main.h>
-/**
- * main - Holds source code
- * Description: prints text
- * Return: returns 0
+#include "main.h"
+/**main - Holds source code
+ * Description: Prints _putchar
+ * Returns 0
  */
 int main(void)
 {
-	_putchar(98);
-	_putchar(112);
-	_putchar(117);
-	_putchar(116);
-	_putchar(99);
-	_putchar(104);
-	_putchar(97);
-	_putchar(114);
+	char count;
+	count = 0;
+	while (count < 27)
+	{
+		_putchar(count + 65);
+		count ++;
+	}
 	return (0);
 }

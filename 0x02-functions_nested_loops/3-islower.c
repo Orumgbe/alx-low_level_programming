@@ -8,11 +8,8 @@
  * On error, 0 is returned
  */
 int _islower(int c)
-{
-	char i;
 
-	i = tolower(c);
-	if (c != i || c < 65)
+	if (islower(c) == 0)
 	{
 		return (0);
 	}

@@ -11,22 +11,14 @@ int _islower(int c)
 {
 	char i;
 
-	i = islower(c);
-	if (i == c)
+	i = tolower(c);
+	if (c > 64 && c < 91)
 	{
 		return (1);
 	}
-	else if (c < 65)
+	else if (c > 96 && c < 123)
 	{
-		return (0);
-	}
-	else if (c > 122)
-	{
-		return (0);
-	}
-	else if (c > 90 && c < 97)
-	{
-		return (0);
+		return (1);
 	}
 	else
 	{

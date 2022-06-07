@@ -10,7 +10,7 @@ int print_last_digit(int l)
 {
 	int r;
 
-	r = l % 10;
-	_putchar('r');
-	return ('r');
+	r = (l % 10) + 48;
+	_putchar(r);
+	return (r);
 }

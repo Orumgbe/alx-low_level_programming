@@ -1,5 +1,5 @@
 #include "main.h"
-#include "math.h"
+#include <math.h>
 /**
  * _abs - check the code
  * @ : integer argument

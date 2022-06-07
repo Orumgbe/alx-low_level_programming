@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 /**
  * _islower - check the code
  * @c: Character to print
@@ -10,7 +11,7 @@ int _islower(int c)
 {
 	char i;
 
-	i = islower(c);
+	i = tolower(c);
 	if (i == c)
 	{
 		return (1);

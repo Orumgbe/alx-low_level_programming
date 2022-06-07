@@ -1,7 +1,8 @@
 #include "main.h"
-/**main - Holds source code
+/**
+ * main - Holds source code
  * Description: Prints _putchar
- * Returns 0
+ * Return: returns 0 and exits the code
  */
 int main(void)
 {

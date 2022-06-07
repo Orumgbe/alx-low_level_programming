@@ -15,7 +15,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(45);
+		_putchar(48);
 		return (0);
 	}
 	else if (n < 0)
@@ -25,5 +25,5 @@ int print_sign(int n)
 		_putchar(45);
 		return (i);
 	}
-	return 0;
+	return (0);
 }

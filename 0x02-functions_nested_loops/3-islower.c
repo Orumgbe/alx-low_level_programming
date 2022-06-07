@@ -12,12 +12,12 @@ int _islower(int c)
 	char i;
 
 	i = tolower(c);
-	if (i > 64 && i < 123)
+	if (c != i && c < 65)
 	{
-		return (1);
+		return (0);
 	}
 	else
 	{
-		return (0);
+		return (1);
 	}
 }

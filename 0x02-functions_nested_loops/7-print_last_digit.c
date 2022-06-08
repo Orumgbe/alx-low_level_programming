@@ -27,7 +27,15 @@ int print_last_digit(int l)
 	{
 		s = l * -1;
 		r = (s % 10) + 48;
-		_putchar(r);
-		return (s % 10);
+		if (r > 48)
+		{
+			_putchar(r);
+			return (s % 10);
+		}
+		else
+		{
+			_putchar(56);
+			return (8);
+		}
 	}
 }

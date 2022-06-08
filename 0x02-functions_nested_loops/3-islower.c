@@ -8,7 +8,7 @@
  * On error, 0 is returned
  */
 int _islower(int c)
-
+{
 	if (islower(c) == 0)
 	{
 		return (0);

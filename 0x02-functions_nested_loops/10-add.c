@@ -1,4 +1,5 @@
 #include "main.c"
+#include <math.h>
 /**
  * add - check the code
  * @i: first digit to sum

@@ -25,9 +25,9 @@ int print_last_digit(int l)
 	}
 	else
 	{
-		s = (l * -1) % 10;
-		r = s + 48;
+		s = l * -1;
+		r = (s % 10) + 48;
 		_putchar(r);
-		return (s);
+		return (s % 10);
 	}
 }

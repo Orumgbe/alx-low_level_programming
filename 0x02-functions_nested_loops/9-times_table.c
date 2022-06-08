@@ -11,6 +11,7 @@ void times_table(void)
 	int r;
 	int c;
 	int val;
+	int count = 0;
 
 	for (c = 0; c < 10; c++)
 	{
@@ -32,6 +33,11 @@ void times_table(void)
 				_putchar(' ');
 			}
 				_putchar('\n');
+		}
+		count++;
+		if (count > c)
+		{
+			putchar('\t');
 		}
 	}
 	_putchar('\n');

@@ -12,11 +12,11 @@ void times_table(void)
 	int c;
 	int val;
 
-	val = r * c;
 	for (r = 0; r < 10; r++)
 	{
 		for (c = 0; c < 10; c++)
 		{
+			val = r * c;
 			if (val < 10)
 			{
 				_putchar(val + 48);

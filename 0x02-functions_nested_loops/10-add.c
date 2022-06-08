@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 #include <math.h>
 /**
  * add - check the code
@@ -11,6 +11,6 @@ int add(int i, int j)
 {
 	int sum;
 
-	sum = i + j;
-	return (sum);
+	s = i + j;
+	return (s);
 }

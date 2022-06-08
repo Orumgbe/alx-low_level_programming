@@ -37,7 +37,7 @@ void times_table(void)
 		count++;
 		if (count > c)
 		{
-			putchar('\t');
+			_putchar('\t');
 		}
 	}
 	_putchar('\n');

@@ -11,7 +11,6 @@ void times_table(void)
 	int r;
 	int c;
 	int val;
-	int count = 0;
 
 	for (c = 0; c < 10; c++)
 	{

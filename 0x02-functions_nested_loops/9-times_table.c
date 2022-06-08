@@ -1,7 +1,7 @@
 #include "main.h"
 #include <math.h>
 /**
- * time_table - check the code
+ * times_table - check the code
  *
  * Description: Prints timestable from 0 to 9
  * Return: returns nothing
@@ -19,16 +19,16 @@ void times_table(void)
 		{
 			if (val < 10)
 			{
-				putchar(val + 48);
-				putchar(',');
-				putchar(' ');
+				_putchar(val + 48);
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
-				putchar(val / 10 + 48);
-				putchar(val % 10 + 48);
-				putchar(',');
-				putchar(' ');
+				_putchar(val / 10 + 48);
+				_putchar(val % 10 + 48);
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');

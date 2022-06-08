@@ -20,13 +20,16 @@ void times_table(void)
 			if (val < 10)
 			{
 				_putchar(val + 48);
-				_putchar(',');
-				_putchar(' ');
+				_putchar('\n');
 			}
 			else
 			{
 				_putchar(val / 10 + 48);
 				_putchar(val % 10 + 48);
+				_putchar('\n');
+			}
+			if (r < 9)
+			{
 				_putchar(',');
 				_putchar(' ');
 			}

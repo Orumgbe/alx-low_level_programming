@@ -24,10 +24,6 @@ int largest_number(int a, int b, int c)
 	{
 		largest = c;
 	}
-	else
-	{
-		printf("Number occurs more than once");
-	}
 
 	return (largest);
 }

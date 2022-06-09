@@ -17,11 +17,11 @@ void more_numbers(void)
 			if (i < 10)
 			{
 				goto unit;
+			}
 				_putchar((i / 10) + '0');
 unit:
 				_putchar((i % 10) + '0');
 				i++
-			}
 		}
 		_putchar('\n');
 		l++;

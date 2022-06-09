@@ -8,12 +8,12 @@
  */
 int _isupper(int c)
 {
-	if (isupper(c) == 1)
-	{
-		return (1);
-	}
-	else if (isupper(c) == 0)
+	if (isupper(c) == 0)
 	{
 		return (0);
+	}
+	else
+	{
+		return (1);
 	}
 }

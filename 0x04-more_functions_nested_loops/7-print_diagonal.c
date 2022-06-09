@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagonal - draws a straight line "n" units long
+ * print_diagonal - draws a diagonal line "n" units long
  * @n: unit of length
  * Return: voided
  */

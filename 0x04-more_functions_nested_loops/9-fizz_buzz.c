@@ -10,11 +10,11 @@ int main(void)
 	i = 1;
 	while (i <= 100)
 	{
-		if ((i % 3) == 0 && (i % 5) != 0 && (i % 15) != 0)
+		if ((i % 3) == 0 && (i % 15) != 0)
 		{
 			printf("Fizz");
 		}
-		else if ((i % 5) == 0 && (i % 3) != 0 && (i % 15) != 0)
+		else if ((i % 5) == 0 && (i % 15) != 0)
 		{
 			printf("Buzz");
 		}
@@ -24,9 +24,10 @@ int main(void)
 		}
 		else
 		{
-			printf(i);
+			printf("%d", i);
 		}
 		putchar(' ');
+		i++;
 	}
 	return (0);
 }

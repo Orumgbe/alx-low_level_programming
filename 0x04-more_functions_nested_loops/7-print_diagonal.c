@@ -30,8 +30,3 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 }
-int main(void)
-{
-	print_diagonal(10);
-	return (0);
-}

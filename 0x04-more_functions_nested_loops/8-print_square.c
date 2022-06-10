@@ -16,11 +16,15 @@ void print_square(int size)
 		while (j <= size)
 		{
 			_putchar(35);
-			i++;
+			j++;
 		}
 		_putchar('\n');
 		i++;
 	}
 	_putchar('\n');
 }
-
+int main(void)
+{
+	print_square(10);
+	return (0);
+}

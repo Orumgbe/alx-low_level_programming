@@ -23,8 +23,3 @@ void print_square(int size)
 	}
 	_putchar('\n');
 }
-int main(void)
-{
-	print_square(10);
-	return (0);
-}

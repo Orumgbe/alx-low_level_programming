@@ -18,7 +18,7 @@ void rev_string(char *s)
 		}
 		else
 		{
-			s[n];
+			*s = s[n];
 			n--;
 		}
 	}

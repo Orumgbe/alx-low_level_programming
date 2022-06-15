@@ -12,7 +12,7 @@ void print_rev(char *s)
 	n = strlen(s);
 	while (n >= 0)
 	{
-		if (s[n] = '\0')
+		if (s[n] == '\0')
 		{
 			n--;
 		}

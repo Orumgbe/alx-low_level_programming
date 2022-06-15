@@ -10,8 +10,8 @@ void rev_string(char *s)
 	int n, m;
 	char *l;
 
-	n = strlen(l);
-	l = *s;
+	n = strlen(s);
+	*l = *s;
 	m = 0;
 	while (n >= 0 && m < n)
 	{

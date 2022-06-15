@@ -11,7 +11,6 @@ void rev_string(char *s)
 	char *l;
 
 	n = strlen(s);
-	*l = *s;
 	m = 0;
 	while (n >= 0 && m < n)
 	{

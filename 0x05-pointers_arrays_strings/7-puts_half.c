@@ -15,17 +15,15 @@ void puts_half(char *str)
 	b = (n - 1) / 2;
 	while (*str != '\0')
 	{
-		if (n % 2 == 0)
+		if (n % 2 == 0 && a < n)
 		{
 			_putchar(str[a]);
 			a++;
-			m += 2;
 		}
-		else
+		else if (n % 2 == 1 && b < n)
 		{
 			_putchar(str[b]);
 			b++;
-			m += 2;
 		}
 	}
 	_putchar('\n');

@@ -10,10 +10,10 @@ void rev_string(char *s)
 	int n, m;
 	char *l;
 
-	*l = *s;
 	n = strlen(l);
+	l = *s;
 	m = 0;
-	while (n >= 0 && m < strlen(s))
+	while (n >= 0 && m < n)
 	{
 		if (l[n] == '\0')
 		{
@@ -23,6 +23,7 @@ void rev_string(char *s)
 		{
 			s[m] = l[n];
 			n--;
+			m++;
 		}
 	}
 }

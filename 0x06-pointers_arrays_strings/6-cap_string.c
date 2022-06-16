@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <ctype.h>
 /**
  * cap_string - Change characters to upper
@@ -7,12 +8,13 @@
  */
 char *cap_string(char *c)
 {
-	int i;
+	int i, n;
 
+	n = strlen(c)
 	i = 0;
-	while (c[i] != '\0')
+	while (i < n)
 	{
-		c = toupper(c);
+		c[i] = toupper(c[i]);
 		i++;
 	}
 	return (c);

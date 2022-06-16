@@ -14,7 +14,7 @@ char *leet(char *c)
 	char arr[size] = {'a', 'e', 'o', 't', 'l'};
 	char rep[size] = {'4', '3', '0', '7', '1'};
 
-	while (c[i] != '\0')
+	while (c[i])
 	{
 		n = 0;
 		while (n < size)

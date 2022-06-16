@@ -7,15 +7,17 @@
  */
 char *string_toupper(char *c)
 {
-	char *up;
 	int i, n;
 
 	n = strlen(c);
 	i = 0;
 	while (i < n)
 	{
-		up[i] = toupper(c[i]);
-		i++;
+		if (c[i] >= 97 && c[i] <= 122)
+		{
+			c[i] = toupper(c[i]);
+			i++;
+		}
 	}
-	return (up);
+	return (c);
 }

@@ -12,7 +12,7 @@ char *string_toupper(char *c)
 	while (*c != '\0')
 	{
 		up = toupper(c);
-		(*C)++;
+		(*c)++;
 	}
 	return (up);
 }

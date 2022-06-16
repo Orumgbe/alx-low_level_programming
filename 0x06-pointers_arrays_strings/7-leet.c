@@ -19,7 +19,7 @@ char *leet(char *c)
 		n = 0;
 		while (n < size)
 		{
-			if (c[i] == ARR[n] || c[i] = arr[n])
+			if (c[i] == ARR[n] || c[i] + 32 = arr[n])
 			{
 				c[i] = rep[n];
 			}

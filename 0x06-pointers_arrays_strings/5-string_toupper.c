@@ -8,11 +8,13 @@
 char *string_toupper(char *c)
 {
 	char *up;
+	int i;
 
-	while (*c != '\0')
+	i = 0;
+	while (c[i] != '\0')
 	{
-		up = toupper(c);
-		(*c)++;
+		up[i] = toupper(c[i]);
+		i++;
 	}
 	return (up);
 }

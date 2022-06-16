@@ -9,6 +9,10 @@ char *string_toupper(char *c)
 {
 	char *up;
 
-	up = toupper(c);
+	while (*c != '\0')
+	{
+		up = toupper(c);
+		(*C)++;
+	}
 	return (up);
 }

@@ -16,6 +16,7 @@ char *leet(char *c)
 	while (c[i])
 	{
 		n = 0;
+
 		while (n < size)
 		{
 			if (c[i] == arr[n] || c[i] - 32 == arr[n])

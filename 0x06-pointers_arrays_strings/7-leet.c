@@ -10,8 +10,7 @@ char *leet(char *c)
 
 	i = 0;
 	size = 5;
-	char ARR[size] = {'A', 'E', 'O', 'T', 'L'};
-	char arr[size] = {'a', 'e', 'o', 't', 'l'};
+	char arr[size] = {'A', 'E', 'O', 'T', 'L'};
 	char rep[size] = {'4', '3', '0', '7', '1'};
 
 	while (c[i])
@@ -19,7 +18,7 @@ char *leet(char *c)
 		n = 0;
 		while (n < size)
 		{
-			if (ARR[n] == c[i] || arr[n] == c[i])
+			if (c[i] == arr[n] || c[i] - 32 == arr[n])
 			{
 				c[i] = rep[n];
 			}

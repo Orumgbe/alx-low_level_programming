@@ -10,8 +10,8 @@ char *leet(char *c)
 
 	i = 0;
 	size = 5;
-	char arr[size] = {'A', 'E', 'O', 'T', 'L'};
-	char rep[size] = {'4', '3', '0', '7', '1'};
+	char arr[5] = {'A', 'E', 'O', 'T', 'L'};
+	char rep[5] = {'4', '3', '0', '7', '1'};
 
 	while (c[i])
 	{

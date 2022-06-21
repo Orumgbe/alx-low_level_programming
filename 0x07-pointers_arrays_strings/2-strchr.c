@@ -15,12 +15,9 @@ char *_strchr(char *s, char c)
 	{
 		if (c == s[i])
 		{
-			s += b;
+			s += i;
 			return (s);
 		}
-		else
-		{
-			return ('\0');
-		}
 	}
+	return ('\0');
 }

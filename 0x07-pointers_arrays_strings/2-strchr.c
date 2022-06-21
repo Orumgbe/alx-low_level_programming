@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strchr - locates a character in a string
  * @s: string literal
@@ -7,20 +8,19 @@
  */
 char *_strchr(char *s, char c)
 {
-	int count;
+	int i, l;
 
-	count = 0;
-	while (s[count] != '\0')
+	l = strlen(s);
+	for (i = 0; i < l; i++)
 	{
-		if(c == s[count])
+		if (c == s[i])
 		{
-			return (s[count]);
-			break;
+			s += b;
+			return (s);
 		}
 		else
 		{
 			return ('\0');
 		}
-		count++;
 	}
 }

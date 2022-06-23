@@ -8,7 +8,7 @@ int prime_number_helper(int, int);
  */
 int is_prime_number(int n)
 {
-	return (prime_number_helper(n, 1);
+	return (prime_number_helper(n, 1));
 }
 /**
  * prime_number_helper - Helper function for prime number
@@ -33,6 +33,6 @@ int prime_number_helper(int n, int i)
 	}
 	else
 	{
-		return (prime_number_helper(n, (i + 1)))
+		return (prime_number_helper(n, (i + 1)));
 	}
 }

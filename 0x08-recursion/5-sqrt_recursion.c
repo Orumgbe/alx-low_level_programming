@@ -1,5 +1,4 @@
 #include "main.h"
-//helper function prototype name
 int _sqrt_helper(int, int);
 /**
  * _sqrt_recursion - Determines natural square root of a number

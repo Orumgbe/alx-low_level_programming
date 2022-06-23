@@ -23,7 +23,7 @@ int _sqrt_helper(int n, int i)
 	}
 	else if (n - (i * i) == 0)
 	{
-		return(i);
+		return (i);
 	}
 	else
 	{

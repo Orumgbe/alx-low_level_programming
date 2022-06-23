@@ -18,15 +18,15 @@ int _sqrt_recursion(int n)
 int _sqrt_helper(int n, int i)
 {
 	if (n < 0)
-        {
-                return (-1);
-        }
-        else if (n - (i * i) == 0)
-        {
-                return(i);
-        }
-        else
-        {
-                return (_sqrt_helper(n, i + 1));
+	{
+		return (-1);
+	}
+	else if (n - (i * i) == 0)
+	{
+		return(i);
+	}
+	else
+	{
+		return (_sqrt_helper(n, i + 1));
 	}
 }

@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 0; i < 5; i++)
+		for (i = 0; i < 5 && val >= 0; i++)
 		{
 			while (val >= unit[i])
 			{

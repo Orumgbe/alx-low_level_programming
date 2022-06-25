@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int i, val, result;
-	int unit[5] = {25, 10, 5, 2, 1}
+	int unit[5] = {25, 10, 5, 2, 1};
 
 	val = atoi(argv[1]);
 	result = 0;

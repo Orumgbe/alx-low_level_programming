@@ -1,5 +1,4 @@
-#ifndef DOG_H
-#define DOG_H
+#pragma once
 /**
  * struct dog - Dog data
  * @name: first data
@@ -12,4 +11,3 @@ typedef struct dog
 	float age;
 	char *owner;
 }dog_t;
-#endif

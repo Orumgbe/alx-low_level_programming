@@ -22,6 +22,9 @@ void fname(char *n)
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f = fname;
-	f(name);
+	if (name != NULL)
+	{
+		f = fname;
+		f(name);
+	}
 }

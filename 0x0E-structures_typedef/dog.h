@@ -1,5 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/**
+ * struct dog - structer of dog data
+ * @name: first member
+ * @age: second mmember
+ * @owner: third member
+ */
 struct dog
 {
 	char *name;

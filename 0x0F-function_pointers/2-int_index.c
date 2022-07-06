@@ -4,10 +4,12 @@
  * @array: array of integers
  * @size: array size
  * @cmp: pointer to comparison function
+ * Return: Index for which cmp does not return 0
+ * on error, -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	signed int i;
 
 	i = 0;
 	if (array == NULL || cmp == NULL || size <= 0)

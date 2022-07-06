@@ -1,17 +1,18 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 /**
- * f - print function
+ * fname- print function
  * @n: string literal
  * Return: nothing
  */
-void f(char *n)
+void fname(char *n)
 {
 	while (n != '\0')
 	{
 		_putchar(n);
 		n++;
 	}
+	_putchar('\n');
 }
 /**
  * print_name - funtion that prints a name
@@ -21,5 +22,6 @@ void f(char *n)
  */
 void print_name(char *name, void (*f)(char *))
 {
+	f = fname;
 	f(name);
 }

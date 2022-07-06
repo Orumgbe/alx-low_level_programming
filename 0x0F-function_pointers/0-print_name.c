@@ -1,15 +1,5 @@
 #include "function_pointers.h"
 #include <stdlib.h>
-void fname(char *n)
-{
-	while (*n != '\0')
-	{
-		_putchar(*n);
-		n++;
-	}
-	_putchar('\n');
-
-}
 /**
  * print_name - funtion that prints a name
  * @name: string literal

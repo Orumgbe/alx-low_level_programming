@@ -18,10 +18,10 @@ void fname(char *n)
  * print_name - funtion that prints a name
  * @name: string literal
  * @f: function pointer with string literal parameter
- * Return: noithing
+ * Return: nothing
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f = &fname;
-	(*f)(name);
+	f = fname;
+	f(name);
 }

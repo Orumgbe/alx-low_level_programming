@@ -1,20 +1,5 @@
 #include "function_pointers.h"
-#include <stdio.h>
 #include <stdlib.h>
-/**
- * fname- print function
- * @n: string literal
- * Return: nothing
- */
-void fname(char *n)
-{
-	while (*n != '\0')
-	{
-		_putchar(*n);
-		n++;
-	}
-	_putchar('\n');
-}
 /**
  * print_name - funtion that prints a name
  * @name: string literal

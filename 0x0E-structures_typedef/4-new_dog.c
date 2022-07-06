@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "dog.h"
 /**
  * new_dog - create new dog struct
@@ -11,7 +12,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *data;
 	
-	data = malloc(sizeof(struct dog));
+	data = (struct dog *)malloc(sizeof(struct dog));
 	if (data == NULL)
 	{
 		return (NULL);
@@ -21,6 +22,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		data->name = name;
 		data->age = age;
 		data->owner = owner;
-		return (0);
+		return (data);
 	}
 }

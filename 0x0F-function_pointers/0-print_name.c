@@ -7,9 +7,9 @@
  */
 void fname(char *n)
 {
-	while (n != '\0')
+	while (*n != '\0')
 	{
-		_putchar(n);
+		_putchar(*n);
 		n++;
 	}
 	_putchar('\n');
@@ -18,10 +18,10 @@ void fname(char *n)
  * print_name - funtion that prints a name
  * @name: string literal
  * @f: function pointer with string literal parameter
- * Return: nothing
+ * Return: noithing
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f = fname;
+	f = &fname;
 	f(name);
 }

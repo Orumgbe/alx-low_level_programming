@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdarg.>
+#include <stdarg.h>
 /**
  * sum_them_all - Sums all argument parameters
  * @n: number of arguments parameters to follow

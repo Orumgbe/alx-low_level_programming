@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include "variadic_functions.h"
 #include <stdio.h>
 /**
  * print_numbers - Prints integer arguments
@@ -27,10 +26,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", val);
 			if (separator != NULL && i != n - 1)
 			{
-				_putchar(*separator);
+				putchar(*separator);
 			}
 		}
 		va_end(all);
-		_putchar('\n');
+		putchar('\n');
 	}
 }

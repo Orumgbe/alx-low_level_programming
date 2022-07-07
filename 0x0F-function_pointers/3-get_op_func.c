@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
 /**
  * get_op_func - function pointer to get operator
@@ -22,7 +22,7 @@ int (*get_op_func(char *s))(int a, int b)
 
 	while (ops[i].op != NULL)
 	{
-		if (ops[i].op == s)
+		if (strcmp(ops[i].op, s) == 0)
 		{
 			return (ops[i].f);
 		}

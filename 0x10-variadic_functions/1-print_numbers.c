@@ -28,6 +28,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			{
 				putchar(*separator);
 			}
+			putchar(" ");
 		}
 		va_end(all);
 		putchar('\n');

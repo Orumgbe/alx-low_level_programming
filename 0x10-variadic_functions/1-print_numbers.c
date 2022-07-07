@@ -27,6 +27,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (separator != NULL && i != n - 1)
 			{
 				putchar(*separator);
+				putchar(" ");
 			}
 		}
 		va_end(all);

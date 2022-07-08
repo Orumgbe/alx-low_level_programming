@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdarg.h>
+#include <stdio.h>
 /**
  * sum_them_all - Sums all argument parameters
  * @n: number of arguments parameters to follow
@@ -10,15 +10,15 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list all;
 	int sum = 0;
-	int i;
+	unsigned int i;
 
-	va_start(all, n);
 	if (n == 0)
 	{
 		return (0);
 	}
 	else
 	{
+		va_start(all, n);
 		for (i = 0; i < n; i++)
 		{
 			sum = sum + va_arg(all, int);

@@ -12,14 +12,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int val;
 
-	va_start(all, n);
 	if (n == 0)
 	{
-		va_end(all);
 		return;
 	}
 	else
 	{
+		va_start(all, n);
 		for (i = 0; i < n; i++)
 		{
 			val = va_arg(all, int);

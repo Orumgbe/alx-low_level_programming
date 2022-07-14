@@ -8,7 +8,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t count;
+	long unsigned int count;
 	const list_t *ptr;
 	char *temp;
 

@@ -1,7 +1,7 @@
 #include "lists.h"
 #include "stdio.h"
 /**
- * list_len: Counts number of elements in linked list
+ * list_len - Counts number of elements in linked list
  * @h: pointer to node
  * Return: number of elements
  */

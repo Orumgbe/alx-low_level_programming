@@ -2,7 +2,7 @@
 #include "stdio.h"
 /**
  * list_len: Counts number of elements in linked list
- * h: pointer to node
+ * @h: pointer to node
  * Return: number of elements
  */
 size_t list_len(const list_t *h)

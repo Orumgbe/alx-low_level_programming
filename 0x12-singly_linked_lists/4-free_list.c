@@ -11,7 +11,7 @@ void free_list(list_t *head)
 
 	ptr = head;
 	if (head == NULL)
-		printf("Freed!");
+		return;
 	while (ptr != NULL)
 	{
 		ptr = ptr->next;

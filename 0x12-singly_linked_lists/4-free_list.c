@@ -11,7 +11,7 @@ void free_list(list_t *head)
 
 	ptr = head;
 	if (head == NULL)
-		return;
+		exit(EXIT_SUCCESS);
 	while (ptr != NULL)
 	{
 		ptr = ptr->next;
@@ -19,5 +19,5 @@ void free_list(list_t *head)
 		free(head);
 		head = ptr;
 	}
-	return;
+	exit(EXIT_SUCCESS);
 }

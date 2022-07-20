@@ -8,7 +8,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int num;
+	unsigned long int num;
 	const listint_t *ptr = NULL;
 
 	if (h == NULL)

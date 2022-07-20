@@ -11,11 +11,19 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *ptr = NULL;
+	listint_t *temp = NULL;
 	unsigned int max, count;
 
 	if (head == NULL)
 		return (NULL);
-	max = listint_len(head);
+
+	temp = head;
+	max = 0;
+	while (temp != NULL)
+	{
+		max++;
+		temp = temp->next;
+	}
 	if (index >= max)
 		return (NULL);
 	ptr = head;

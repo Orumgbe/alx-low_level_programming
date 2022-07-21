@@ -8,8 +8,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int bin, i;
-	unsigned int dec, rem, pval;
+	int i;
+	unsigned int bin, dec, rem, pval;
 
 	bin = 0;
 	for (i = 0; b[i] != '\0'; ++i)

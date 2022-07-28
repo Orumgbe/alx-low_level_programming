@@ -1,7 +1,3 @@
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <stddef.h>
 #include "main.h"
 /**
  * read_textfile - reads and print textfile to POSIX stdout

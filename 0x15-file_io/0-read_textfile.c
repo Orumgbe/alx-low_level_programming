@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include "main.h"
@@ -28,8 +29,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(text);
 		return (0);
 	}
-	count = write(STDOUT_FILENO, text, read_count);
-	if (write == -1)
+	count = write(STDOUT_FILENO, text, letters);
+	if (write == -1 || read_count != count)
 	{
 		free(text);
 		return (0);

@@ -20,6 +20,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 	text = malloc(sizeof(char) * letters);
+	if (text == NULL)
+		return (0);
 	read_count = read(fd, text, letters);
 	if (read_count == -1)
 	{

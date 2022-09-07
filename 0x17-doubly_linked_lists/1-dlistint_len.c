@@ -10,6 +10,7 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	size_t num = 0;
 	const dlistint_t *temp = NULL;
+
 	if (h == NULL)
 		return (num);
 	temp = malloc(sizeof(dlistint_t));

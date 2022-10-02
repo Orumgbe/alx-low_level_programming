@@ -11,46 +11,41 @@ unsigned int count(dlistint_t *h);
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *ptr = NULL;
+	dlistint_t *ptr, *temp;
 	unsigned int num = 0;
 	unsigned int list_len = count(*head);
 
 	if (*head == NULL || list_len < index)
 		return (-1);
 	ptr = *head;
-	if (ptr->next == NULL)
+	if (!index)
 	{
-		*head = NULL;
-		free(ptr);
-		return (1);
-	}
-	if (index == 0)
-	{
-		*head = ptr->next;
-		free(ptr);
-		ptr = NULL;
+		temp = ptr;
+		if (ptr->next)
+		{
+			*head = ptr->next;
+			free(temp);
+			(*head)->prev = NULL;
+		} else
+		{
+			free(*head);
+			*head = NULL;
+		}
 		return (1);
 	}
 	while (ptr)
 	{
 		if (num == index)
 		{
-			if (ptr->next == NULL)
-			{
-				ptr->prev->next = NULL;
-				ptr = NULL;
-			}
+			temp = ptr;
 			ptr->prev->next = ptr->next;
-			ptr->next->prev = ptr->prev;
-			ptr->prev = NULL;
-			ptr->next = NULL;
-			free(ptr);
+			free(temp);
 			return (1);
 		}
-		ptr = ptr->next;
 		num++;
+		ptr = ptr->next;
 	}
-	return (1);
+	return (-1);
 }
 /**
  * count - determine number of element in list

@@ -5,7 +5,7 @@
  * binary_search - binary search algorithm
  * @array: pointer to first element of array
  * @size: size of array
- * value: value to search for
+ * @value: value to search for
  * Return: value index, or -1 if not found or code fail
  */
 int binary_search(int *array, size_t size, int value)
@@ -34,10 +34,10 @@ int binary_search(int *array, size_t size, int value)
 
 		mid = (l_idx + r_idx) / 2;
 
-		if (array[mid] < value)
-			l_idx = mid + 1;
-		else if (array[mid] > value)
+		if (array[mid] > value)
 			r_idx = mid - 1;
+		else if (array[mid] < value)
+			l_idx = mid + 1;
 		else
 			return (mid);
 	}

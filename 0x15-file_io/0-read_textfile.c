@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * read_textfile - reads and print textfile to POSIX stdout
  * @filename: name of the file
@@ -13,10 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	fd = open(filename, O_RDONLY, 0700);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	text = malloc(sizeof(char) * letters);
+	text = malloc(sizeof(char) * letters + 1);
 	if (text == NULL)
 		return (0);
 	read_count = read(fd, text, letters);
@@ -25,12 +26,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(text);
 		return (0);
 	}
-	count = write(STDOUT_FILENO, text, letters);
-	if (count == -1 || read_count != count)
+	count = write(STDOUT_FILENO, text, read_count);
+	if (count == -1)
 	{
-		free(text);
 		return (0);
 	}
 	close(fd);
+	free(text);
 	return (count);
 }
